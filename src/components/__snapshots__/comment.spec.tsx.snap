@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Comment component renders at different indentation levels 1`] = `
+<body>
+  <div>
+    <tr
+      class="athing comtr "
+      id="15238246"
+    >
+      <td>
+        <table
+          style="border: 0px;"
+        >
+          <tbody>
+            <tr>
+              <td
+                class="ind"
+              >
+                <img
+                  alt=""
+                  height="1"
+                  src="/static/s.gif"
+                  width="0"
+                />
+              </td>
+              <td
+                class="votelinks"
+                style="vertical-align: top;"
+              >
+                <div
+                  style="text-align: center;"
+                >
+                  <a
+                    href="vote?id=15238246&how=up&auth=4eb97bf0d2568aa743691210b904f0c5182bb0fc&goto=item%3Fid%3D15237896#15238246"
+                    id="up_15238246"
+                  >
+                    <div
+                      class="votearrow"
+                      title="upvote"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td
+                class="default"
+              >
+                <div
+                  style="margin-top: 2px; margin-bottom: -10px;"
+                >
+                  <span
+                    class="comhead"
+                  >
+                    <a
+                      class="hnuser"
+                      href="/user?id=mstade"
+                    >
+                      megous
+                    </a>
+                    <span
+                      class="age"
+                    >
+                       
+                      <a
+                        href="/item?id=15289630"
+                      >
+                        1 day ago
+                      </a>
+                    </span>
+                     
+                    <span
+                      id="unv_15238246"
+                    />
+                    <span
+                      class="par"
+                    />
+                     
+                    <a
+                      class="togg"
+                      id="24"
+                    >
+                      [-]
+                    </a>
+                    <span
+                      class="storyon"
+                    />
+                  </span>
+                </div>
+                <br />
+                <div
+                  class="comment"
+                >
+                  <span
+                    class="c00"
+                  >
+                    <span>
+                      It is part of it in this case. You've just eliminated most of non-targeted scanners. Your log is much more readable and what is left will probably be dedicated attackers.
+                      <p>
+                        This might help in forensic investigation afterwards. Less crap to wade through.
+                      </p>
+                    </span>
+                    <div
+                      class="reply"
+                    >
+                      <p>
+                        <u>
+                          <a
+                            href="/reply?id=15289630&goto=item%3Fid%3D15289630"
+                          >
+                            reply
+                          </a>
+                        </u>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </div>
+</body>
+`;
