@@ -4,6 +4,8 @@ HN-like link aggregation and discussion platform, focusing on Zero-Knowledge Pro
 
 Currently, almost entirely based on https://github.com/clintonwoo/hackernews-react-graphql for test purpose.
 
+![](./0508.png)
+
 ---
 
 
