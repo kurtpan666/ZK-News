@@ -1,6 +1,6 @@
 /** @jest-environment jsdom */
 
-import Page from '../../pages/newswelcome';
+import Page from '../routes/__notice/newswelcome';
 
 describe('Welcome Page', () => {
   it('has default export', () => {

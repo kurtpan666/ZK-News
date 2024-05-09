@@ -1,6 +1,6 @@
 /** @jest-environment jsdom */
 
-import Page from '../../pages/changepw';
+import Page from '../routes/__main/changepw';
 
 describe('Change Password Page', () => {
   it('has default export', () => {

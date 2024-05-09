@@ -1,6 +1,6 @@
 /** @jest-environment jsdom */
 
-import Page from '../../pages/shownew';
+import Page from '../routes/__main/shownew';
 
 describe('Show New Page', () => {
   it('has default export', () => {

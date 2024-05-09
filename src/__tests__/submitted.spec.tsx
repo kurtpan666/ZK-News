@@ -1,6 +1,6 @@
 /** @jest-environment jsdom */
 
-import Page from '../../pages/submitted';
+import Page from '../routes/__main/submitted';
 
 describe('Submitted Posts Page', () => {
   it('has default export', () => {

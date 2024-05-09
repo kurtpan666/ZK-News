@@ -1,48 +1,59 @@
-import * as React from 'react';
-import { DataValue } from 'react-apollo';
-
-import { NewsItemModel } from '../data/models';
+import { useCurrentPathname } from '../utils/hooks';
+import type { IStory } from '../server/responses';
 import { LoadingSpinner } from './loading-spinner';
-import { NewsDetail, newsDetailNewsItemFragment } from './news-detail';
-import { NewsTitle, newsTitleFragment } from './news-title';
+import { ItemDetail } from './item-detail';
+import { ItemTitle } from './item-title';
 
 export interface INewsFeedProps {
-  currentUrl: string;
-  first: number;
+  error?: any;
   isJobListing?: boolean;
+  isLoading?: boolean;
   isPostScrutinyVisible?: boolean;
   isRankVisible?: boolean;
   isUpvoteVisible?: boolean;
-  newsItems: Array<NewsItemModel | null>;
+  stories: Array<IStory | void> | void;
   notice?: JSX.Element;
-  skip: number;
+  pageNumber: number;
+  postsPerPage: number;
 }
 
-export const newsFeedNewsItemFragment = `
-  fragment NewsFeed on NewsItem {
-    id
-    hidden
-    ...NewsTitle
-    ...NewsDetail
-  }
-  ${newsTitleFragment}
-  ${newsDetailNewsItemFragment}
-`;
-
-export function NewsFeedView(props: INewsFeedProps): JSX.Element {
+export function NewsFeed(props: INewsFeedProps): JSX.Element {
   const {
-    isPostScrutinyVisible = false,
-    first,
-    newsItems,
-    notice = null,
-    skip,
+    error,
     isJobListing = false,
+    isLoading,
+    isPostScrutinyVisible = false,
     isRankVisible = true,
     isUpvoteVisible = true,
-    currentUrl,
+    notice = null,
+    pageNumber,
+    postsPerPage,
+    stories,
   } = props;
 
-  const nextPage = Math.ceil((skip || 1) / first) + 1;
+  const currentPathname = useCurrentPathname();
+
+  if (error) {
+    return (
+      <tr>
+        <td>Error loading news items.</td>
+      </tr>
+    );
+  }
+
+  if (isLoading) {
+    return <LoadingSpinner />;
+  }
+
+  if (!stories?.length) {
+    return (
+      <tr>
+        <td>No stories found.</td>
+      </tr>
+    );
+  }
+
+  const nextPage = pageNumber + 1;
 
   return (
     <tr>
@@ -59,22 +70,30 @@ export function NewsFeedView(props: INewsFeedProps): JSX.Element {
           <tbody>
             {notice && notice}
             <>
-              {newsItems
-                .filter((newsItem): newsItem is NewsItemModel => !!newsItem && !newsItem.hidden)
+              {stories
+                .filter((newsItem): newsItem is IStory => !!newsItem && !newsItem.hidden)
                 .flatMap((newsItem, index) => [
-                  <NewsTitle
+                  <ItemTitle
                     key={`${newsItem.id}title`}
+                    id={newsItem.id}
                     isRankVisible={isRankVisible}
                     isUpvoteVisible={isUpvoteVisible}
-                    rank={skip + index + 1}
-                    {...newsItem}
+                    rank={postsPerPage * (pageNumber - 1) + index + 1}
+                    title={newsItem.title}
+                    upvoted={newsItem.didUserUpvote}
+                    url={newsItem.url}
                   />,
-                  <NewsDetail
+                  <ItemDetail
                     key={`${newsItem.id}detail`}
+                    commentCount={newsItem.commentCount}
+                    creationTime={newsItem.creationTime}
+                    hidden={newsItem.hidden}
+                    id={newsItem.id}
                     isFavoriteVisible={false}
-                    isPostScrutinyVisible={isPostScrutinyVisible}
                     isJobListing={isJobListing}
-                    {...newsItem}
+                    isPostScrutinyVisible={isPostScrutinyVisible}
+                    submitterId={newsItem.submitterId}
+                    upvoteCount={newsItem.upvoteCount}
                   />,
                   <tr className="spacer" key={`${newsItem.id}spacer`} style={{ height: 5 }} />,
                 ])}
@@ -84,7 +103,7 @@ export function NewsFeedView(props: INewsFeedProps): JSX.Element {
                 <td key="morelinktd" className="title">
                   <a
                     key="morelink"
-                    href={`${currentUrl}?p=${nextPage}`}
+                    href={`${currentPathname}?p=${nextPage}`}
                     className="morelink"
                     rel="nofollow"
                   >
@@ -99,45 +118,3 @@ export function NewsFeedView(props: INewsFeedProps): JSX.Element {
     </tr>
   );
 }
-
-export interface INewsFeedData {
-  error;
-  feed;
-  loading;
-}
-export interface INewsFeedContainerProps {
-  currentUrl: string;
-  data: DataValue<INewsFeedData, {}>;
-  first: number;
-  isJobListing?: boolean;
-  isRankVisible?: boolean;
-  isUpvoteVisible?: boolean;
-  notice?: JSX.Element;
-  skip: number;
-}
-
-export const NewsFeed: React.FC<INewsFeedContainerProps> = (props) => {
-  const { data, currentUrl, first, skip, notice } = props;
-
-  if (data?.error) {
-    return (
-      <tr>
-        <td>Error loading news items.</td>
-      </tr>
-    );
-  }
-
-  if (data?.feed?.length) {
-    return (
-      <NewsFeedView
-        newsItems={data?.feed}
-        currentUrl={currentUrl}
-        first={first}
-        skip={skip}
-        notice={notice}
-      />
-    );
-  }
-
-  return <LoadingSpinner />;
-};

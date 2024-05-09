@@ -1,6 +1,6 @@
 /** @jest-environment jsdom */
 
-import Page from '../../pages/bookmarklet';
+import Page from '../routes/__notice/bookmarklet';
 
 describe('Bookmarklet Page', () => {
   it('has default export', () => {

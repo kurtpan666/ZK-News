@@ -1,6 +1,6 @@
 /** @jest-environment jsdom */
 
-import Page from '../../pages/jobs';
+import Page from '../routes/__main/jobs';
 
 describe('Jobs Page', () => {
   it('has default export', () => {

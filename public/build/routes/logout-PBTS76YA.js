@@ -1,0 +1,1 @@
+import{b as t,d as r}from"/build/_shared/chunk-EN27VTUB.js";import{b as e}from"/build/_shared/chunk-MC7GRPCH.js";import{g as o}from"/build/_shared/chunk-EFF4OLHG.js";o();o();var m=async({request:s})=>{let i=await t(s.headers.get("Cookie"));return e("/login",{headers:{"Set-Cookie":await r(i)}})};export{m as loader};

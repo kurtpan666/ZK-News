@@ -1,6 +1,6 @@
 /** @jest-environment jsdom */
 
-import Page from '../../pages/best';
+import Page from '../routes/__main/best';
 
 describe('Best Posts Page', () => {
   it('has default export', () => {

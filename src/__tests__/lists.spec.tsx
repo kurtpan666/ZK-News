@@ -1,6 +1,6 @@
 /** @jest-environment jsdom */
 
-import Page from '../../pages/lists';
+import Page from '../routes/__main/lists';
 
 describe('Lists Page', () => {
   it('has default export', () => {

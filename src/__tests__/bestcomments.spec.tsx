@@ -1,6 +1,6 @@
 /** @jest-environment jsdom */
 
-import Page from '../../pages/bestcomments';
+import Page from '../routes/__main/bestcomments';
 
 describe('Best Comments Page', () => {
   it('has default export', () => {

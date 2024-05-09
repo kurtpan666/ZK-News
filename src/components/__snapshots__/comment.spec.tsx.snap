@@ -5,7 +5,7 @@ exports[`Comment component renders at different indentation levels 1`] = `
   <div>
     <tr
       class="athing comtr "
-      id="15238246"
+      id="15289630"
     >
       <td>
         <table
@@ -19,7 +19,7 @@ exports[`Comment component renders at different indentation levels 1`] = `
                 <img
                   alt=""
                   height="1"
-                  src="/static/s.gif"
+                  src="test-file-mock"
                   width="0"
                 />
               </td>
@@ -31,8 +31,8 @@ exports[`Comment component renders at different indentation levels 1`] = `
                   style="text-align: center;"
                 >
                   <a
-                    href="vote?id=15238246&how=up&auth=4eb97bf0d2568aa743691210b904f0c5182bb0fc&goto=item%3Fid%3D15237896#15238246"
-                    id="up_15238246"
+                    href="vote?id=15289630&how=up&auth=4eb97bf0d2568aa743691210b904f0c5182bb0fc&goto=item?id=15289630"
+                    id="up_15289630"
                   >
                     <div
                       class="votearrow"
@@ -52,7 +52,7 @@ exports[`Comment component renders at different indentation levels 1`] = `
                   >
                     <a
                       class="hnuser"
-                      href="/user?id=mstade"
+                      href="/user?id=megous"
                     >
                       megous
                     </a>
@@ -62,9 +62,7 @@ exports[`Comment component renders at different indentation levels 1`] = `
                        
                       <a
                         href="/item?id=15289630"
-                      >
-                        1 day ago
-                      </a>
+                      />
                     </span>
                      
                     <span
@@ -74,12 +72,12 @@ exports[`Comment component renders at different indentation levels 1`] = `
                       class="par"
                     />
                      
-                    <a
+                    <span
                       class="togg"
                       id="24"
                     >
                       [-]
-                    </a>
+                    </span>
                     <span
                       class="storyon"
                     />
@@ -92,23 +90,21 @@ exports[`Comment component renders at different indentation levels 1`] = `
                   <span
                     class="c00"
                   >
-                    <span>
+                    <div>
                       It is part of it in this case. You've just eliminated most of non-targeted scanners. Your log is much more readable and what is left will probably be dedicated attackers.
                       <p>
                         This might help in forensic investigation afterwards. Less crap to wade through.
                       </p>
-                    </span>
+                    </div>
                     <div
                       class="reply"
                     >
                       <p>
-                        <u>
-                          <a
-                            href="/reply?id=15289630&goto=item%3Fid%3D15289630"
-                          >
-                            reply
-                          </a>
-                        </u>
+                        <a
+                          href="/reply?id=15289630&goto=item?id=15289630"
+                        >
+                          reply
+                        </a>
                       </p>
                     </div>
                   </span>

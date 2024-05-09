@@ -1,0 +1,1 @@
+import{e}from"/build/_shared/chunk-MC7GRPCH.js";import{f as o,g as t}from"/build/_shared/chunk-EFF4OLHG.js";t();t();var i="/build/_assets/yc-L3C5LB6U.css";var r=()=>[{rel:"stylesheet",href:i,type:"text/css"}];function s(){return o.createElement(e,null)}export{s as default,r as links};

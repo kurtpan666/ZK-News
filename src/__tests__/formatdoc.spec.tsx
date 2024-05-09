@@ -1,6 +1,6 @@
 /** @jest-environment jsdom */
 
-import Page from '../../pages/formatdoc';
+import Page from '../routes/__main/formatdoc';
 
 describe('Format Doc Page', () => {
   it('has default export', () => {

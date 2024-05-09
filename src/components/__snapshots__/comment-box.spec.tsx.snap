@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Comment component renders at different indentation levels 1`] = `
+exports[`CommentBox component renders at different indentation levels 1`] = `
 <body>
   <div>
     <tr>
@@ -15,12 +15,12 @@ exports[`Comment component renders at different indentation levels 1`] = `
           <input
             name="parent"
             type="hidden"
-            value="15237896"
+            value=""
           />
           <input
             name="goto"
             type="hidden"
-            value="item?id=15237896"
+            value="item?id=undefined"
           />
           <input
             name="hmac"

@@ -1,6 +1,6 @@
 /** @jest-environment jsdom */
 
-import Page from '../../pages/newpoll';
+import Page from '../routes/__main/newpoll';
 
 describe('New Poll Page', () => {
   it('has default export', () => {

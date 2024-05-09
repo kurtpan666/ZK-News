@@ -1,0 +1,1 @@
+import{c as s}from"/build/_shared/chunk-MC7GRPCH.js";import{g as m}from"/build/_shared/chunk-EFF4OLHG.js";m();var t;(function(e){e.USER_ID="userId"})(t||(t={}));var{getSession:n,commitSession:r,destroySession:o}=s({cookie:{name:"__session",secrets:["insecure_example"],sameSite:"strict",maxAge:604800}});export{t as a,n as b,r as c,o as d};

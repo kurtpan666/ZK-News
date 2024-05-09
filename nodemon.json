@@ -1,5 +1,0 @@
-{
-  "watch": ["server"],
-  "exec": "ts-node --log-error --project tsconfig-server.json server/server.ts",
-  "ext": "js ts tsx"
-}

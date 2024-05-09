@@ -1,6 +1,6 @@
 /** @jest-environment jsdom */
 
-import Page from '../../pages/reply';
+import Page from '../routes/__main/reply';
 
 describe('Reply Page', () => {
   it('has default export', () => {

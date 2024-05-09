@@ -1,6 +1,6 @@
 /** @jest-environment jsdom */
 
-import Page from '../../pages/user';
+import Page from '../routes/__main/user';
 
 describe('User Page', () => {
   it('has default export', () => {

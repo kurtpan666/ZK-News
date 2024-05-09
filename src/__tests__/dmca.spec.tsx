@@ -1,6 +1,6 @@
 /** @jest-environment jsdom */
 
-import Page from '../../pages/dmca';
+import Page from '../routes/__blank/dmca';
 
 describe('DMCA Page', () => {
   it('has default export', () => {

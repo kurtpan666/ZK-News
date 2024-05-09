@@ -1,18 +1,16 @@
-import Head from 'next/head';
 import * as React from 'react';
 
-export function NoticeLayout(props): JSX.Element {
+import yc500Gif from '../../public/static/yc500.gif';
+
+export interface INoticeLayoutProps {
+  children: React.ReactNode;
+}
+
+export function NoticeLayout(props: INoticeLayoutProps): JSX.Element {
   const { children } = props;
 
   return (
     <div>
-      <Head>
-        <title>ZK News</title>
-        <meta name="referrer" content="origin" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="stylesheet" type="text/css" href="/static/yc.css" />
-        <link rel="shortcut icon" href="/static/favicon.ico" />
-      </Head>
       <br />
       <br />
       <table style={{ marginLeft: 'auto', marginRight: 'auto', padding: '0px', width: '500px' }}>
@@ -20,7 +18,7 @@ export function NoticeLayout(props): JSX.Element {
           <tr>
             <td style={{ backgroundColor: '#fafaf0' }}>
               <a href="http://www.ycombinator.com">
-                <img alt="" src="/static/yc500.gif" style={{ border: '0px' }} width="500" />
+                <img alt="" src={yc500Gif} style={{ border: '0px' }} width="500" />
               </a>
               <br />
               <br />

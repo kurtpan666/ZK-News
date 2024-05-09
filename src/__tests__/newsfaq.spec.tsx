@@ -1,6 +1,6 @@
 /** @jest-environment jsdom */
 
-import Page from '../../pages/newsfaq';
+import Page from '../routes/__notice/newsfaq';
 
 describe('FAQ Page', () => {
   it('has default export', () => {

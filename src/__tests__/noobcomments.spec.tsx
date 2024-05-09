@@ -1,6 +1,6 @@
 /** @jest-environment jsdom */
 
-import Page from '../../pages/noobcomments';
+import Page from '../routes/__main/noobcomments';
 
 describe('Noob Comments Page', () => {
   it('has default export', () => {

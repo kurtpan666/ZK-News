@@ -1,6 +1,6 @@
 /** @jest-environment jsdom */
 
-import Page from '../../pages/newcomments';
+import Page from '../routes/__main/newcomments';
 
 describe('New Comments Page', () => {
   it('has default export', () => {

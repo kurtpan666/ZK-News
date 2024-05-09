@@ -1,6 +1,6 @@
 /** @jest-environment jsdom */
 
-import Page from '../../pages/submit';
+import Page from '../routes/__main/submit';
 
 describe('Submit Page', () => {
   it('has default export', () => {

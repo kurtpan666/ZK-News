@@ -1,76 +1,97 @@
 import * as React from 'react';
 
-import { NewsItemModel } from '../data/models';
-import { Comment, commentFragment } from './comment';
+import { IComment } from '../server/responses';
+import { Comment } from './comment';
 
-export interface ICommentsProps {
-  newsItem: NewsItemModel;
+function countChildrenComments(comments: IComment[]): number {
+  return (
+    comments.length +
+    comments.reduce((count, comment) => {
+      if (comment.comments) count += countChildrenComments(comment.comments);
+      return count;
+    }, 0)
+  );
 }
 
-export const commentsFragment = `
-  fragment Comments on Comment {
-    id
-    comments {
-      id
-      comments {
-        id
-        comments {
-          id
-          comments {
-            id
-            ...Comment
-          }
-          ...Comment
-        }
-        ...Comment
-      }
-      ...Comment
+/**
+ * Recursively flattens tree into flat array and calls the callback on each item
+ */
+function renderCommentTreeAsFlatArray(
+  array: any[],
+  comments: IComment[],
+  level: number,
+  shouldIndent: boolean,
+  collapsedComments: ICollapsedComments,
+  toggleCollapseComment: (id: number) => void
+): React.ReactNode {
+  for (const comment of comments) {
+    if (typeof comment === 'number') continue;
+
+    const isCollapsed = collapsedComments[comment.id];
+    const children = comment.comments;
+
+    array.push(
+      <Comment
+        key={comment.id}
+        collapsedChildrenCommentsCount={isCollapsed ? countChildrenComments(children) : undefined}
+        submitterId={comment.submitterId}
+        text={comment.text}
+        toggleCollapseComment={toggleCollapseComment}
+        creationTime={comment.creationTime}
+        id={comment.id}
+        indentationLevel={level}
+        isCollapsed={isCollapsed}
+      />
+    );
+
+    if (!isCollapsed && Array.isArray(children) && children.length > 0) {
+      renderCommentTreeAsFlatArray(
+        array,
+        children,
+        level + (shouldIndent ? 1 : 0),
+        shouldIndent,
+        collapsedComments,
+        toggleCollapseComment
+      );
     }
-    ...Comment
   }
-  ${commentFragment}
-`;
 
-export class Comments extends React.Component<ICommentsProps> {
-  renderComment = (comment, indent: number): JSX.Element => {
-    return (
-      <Comment key={comment.id} parentId={comment.parent} indentationLevel={indent} {...comment} />
-    );
-  };
+  return array;
+}
 
-  render(): JSX.Element {
-    const { newsItem } = this.props;
+export interface ICommentsProps {
+  comments: IComment[];
+  shouldIndent: boolean;
+}
 
-    const rows: JSX.Element[] = [];
+export interface ICollapsedComments {
+  [key: number]: boolean;
+}
 
-    newsItem.comments.forEach((rootComment) => {
-      rows.push(this.renderComment(rootComment, 0));
+export function Comments(props: ICommentsProps): JSX.Element {
+  const { comments, shouldIndent } = props;
 
-      rootComment.comments.forEach((commentOne) => {
-        rows.push(this.renderComment(commentOne, 1));
+  const [collapsedComments, setCollapsedComments] = React.useState<ICollapsedComments>({});
 
-        commentOne.comments.forEach((commentTwo) => {
-          rows.push(this.renderComment(commentTwo, 2));
+  const toggleCollapseComment = React.useCallback(
+    (id: number) => {
+      setCollapsedComments({ ...collapsedComments, [id]: !collapsedComments[id] });
+    },
+    [collapsedComments, setCollapsedComments]
+  );
 
-          commentTwo.comments.forEach((commentThree) => {
-            rows.push(this.renderComment(commentThree, 3));
-
-            commentThree.comments.forEach((commentFour) => {
-              rows.push(this.renderComment(commentFour, 4));
-
-              commentFour.comments.forEach((commentFive) => {
-                rows.push(this.renderComment(commentFive, 5));
-              });
-            });
-          });
-        });
-      });
-    });
-
-    return (
-      <table className="comment-tree" style={{ border: '0' }}>
-        <tbody>{rows}</tbody>
-      </table>
-    );
-  }
+  return (
+    <table className="comment-tree" style={{ border: '0' }}>
+      <tbody>
+        {renderCommentTreeAsFlatArray(
+          [],
+          comments,
+          0,
+          shouldIndent,
+          collapsedComments,
+          toggleCollapseComment
+        )}
+      </tbody>
+    </table>
+  );
 }

@@ -34,6 +34,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1224&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -102,6 +103,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1224&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -140,6 +142,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1225&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -208,6 +211,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1225&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -246,6 +250,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1226&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -314,6 +319,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1226&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -352,6 +358,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1222&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -420,6 +427,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1222&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -458,6 +466,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1223&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -510,6 +519,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1223&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -548,6 +558,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1227&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -616,6 +627,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1227&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -654,6 +666,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1228&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -722,6 +735,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1228&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -760,6 +774,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1229&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -828,6 +843,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1229&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -866,6 +882,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1230&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -934,6 +951,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1230&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -972,6 +990,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1231&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -1040,6 +1059,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1231&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -1078,6 +1098,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1232&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -1146,6 +1167,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1232&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -1184,6 +1206,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1233&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -1252,6 +1275,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1233&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -1290,6 +1314,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1234&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -1358,6 +1383,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1234&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -1396,6 +1422,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1235&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -1464,6 +1491,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1235&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -1502,6 +1530,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1236&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -1570,6 +1599,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1236&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -1608,6 +1638,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1237&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -1676,6 +1707,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1237&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -1714,6 +1746,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1238&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -1782,6 +1815,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1238&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -1820,6 +1854,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1239&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -1888,6 +1923,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1239&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -1926,6 +1962,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1240&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -1994,6 +2031,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1240&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -2032,6 +2070,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1241&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -2100,6 +2139,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1241&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -2138,6 +2178,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1242&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -2206,6 +2247,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1242&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -2244,6 +2286,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1243&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -2312,6 +2355,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1243&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -2350,6 +2394,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1244&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -2418,6 +2463,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1244&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -2456,6 +2502,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1245&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -2524,6 +2571,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1245&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -2562,6 +2610,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1246&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -2630,6 +2679,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1246&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -2668,6 +2718,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1247&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -2736,6 +2787,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1247&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -2774,6 +2826,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1248&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -2842,6 +2895,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1248&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -2880,6 +2934,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1249&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -2948,6 +3003,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1249&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -2986,6 +3042,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1250&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -3054,6 +3111,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1250&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide
@@ -3092,6 +3150,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 >
                   <a
                     class=" "
+                    href="/vote?id=1251&how=up&goto=/"
                     style="cursor: pointer;"
                   >
                     <div
@@ -3160,6 +3219,7 @@ exports[`NewsFeed component renders news items passed in as props 1`] = `
                 </span>
                  | 
                 <a
+                  href="/hide?id=1251&how=up&goto=news"
                   style="cursor: pointer;"
                 >
                   hide

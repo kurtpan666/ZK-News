@@ -2,8 +2,9 @@
 import { render } from '@testing-library/react';
 import MockDate from 'mockdate';
 import * as React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-import { sampleData } from '../data/sample-data';
+import { sampleData } from '../server/sample-data';
 import { Comment } from './comment';
 
 const comment = sampleData.comments[0];
@@ -12,7 +13,11 @@ MockDate.set(1506022129802);
 
 describe('Comment component', () => {
   it('renders at different indentation levels', () => {
-    const wrapper = render(<Comment {...comment} indentationLevel={0} />);
+    const wrapper = render(
+      <BrowserRouter>
+        <Comment {...comment} indentationLevel={0} />
+      </BrowserRouter>
+    );
     expect(wrapper.baseElement).toMatchSnapshot();
   });
 });

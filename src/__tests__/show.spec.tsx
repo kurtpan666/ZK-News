@@ -1,6 +1,6 @@
 /** @jest-environment jsdom */
 
-import Page from '../../pages/show';
+import Page from '../routes/__main/show';
 
 describe('Show Page', () => {
   it('has default export', () => {
